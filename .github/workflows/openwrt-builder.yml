@@ -21,7 +21,7 @@ on:
 env:
   REPO_URL: https://github.com/fat4-alt/lede
   REPO_BRANCH: master
-  CONFIG_FILE: .config
+  CONFIG_FILE: fzs.config
   DIY_SH: diy.sh
   FREE_SPACE: true
   UPLOAD_FIRMWARE: true
