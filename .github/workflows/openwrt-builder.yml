@@ -19,7 +19,7 @@ on:
 # 2. 全局环境变量 (Environment Variables)
 # ============================================================
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/fat4-alt/lede
   REPO_BRANCH: master
   CONFIG_FILE: .config
   DIY_SH: diy.sh
@@ -95,6 +95,7 @@ jobs:
         ./scripts/feeds update qmodem
         ./scripts/feeds install -a -p qmodem
         ./scripts/feeds install -a -f -p qmodem
+        rm -rf ./openwrt/package/feeds/helloworld/luci-app-ssr-plus
         
 
     # --------------------------------------------------------
