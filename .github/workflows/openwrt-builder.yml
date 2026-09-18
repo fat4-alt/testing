@@ -95,7 +95,7 @@ jobs:
         ./scripts/feeds update qmodem
         ./scripts/feeds install -a -p qmodem
         ./scripts/feeds install -a -f -p qmodem
-        rm -rf ./openwrt/package/feeds/helloworld/luci-app-ssr-plus
+        rm -rf ./package/feeds/helloworld/luci-app-ssr-plus
         
 
     # --------------------------------------------------------
