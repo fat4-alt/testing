@@ -19,7 +19,7 @@ on:
 # 2. 全局环境变量 (Environment Variables)
 # ============================================================
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_URL: https://github.com/fat4-alt/Lienol
   REPO_BRANCH: 25.12
   CONFIG_FILE: .config
   DIY_SH: diy.sh
