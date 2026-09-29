@@ -19,7 +19,7 @@ on:
 # 2. 全局环境变量 (Environment Variables)
 # ============================================================
 env:
-  REPO_URL: https://github.com/fat4-alt/Lienol
+  REPO_URL: https://github.com/Lienol/openwrt openwrt
   REPO_BRANCH: 25.12
   CONFIG_FILE: .config
   DIY_SH: diy.sh
@@ -89,6 +89,7 @@ jobs:
         [ -e $GITHUB_WORKSPACE/$DIY_SH ] && mv $GITHUB_WORKSPACE/$DIY_SH ./diy.sh
         chmod +x ./diy.sh
         ./diy.sh
+        echo 'src-git homeproxy https://github.com/szwjp/luci-app-homeproxy.git;main' >> feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
 
