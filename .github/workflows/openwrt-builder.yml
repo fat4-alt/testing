@@ -20,7 +20,7 @@ on:
 # ============================================================
 env:
   REPO_URL: https://github.com/fat4-alt/Lienol
-  REPO_BRANCH: 25.12
+  REPO_BRANCH: 24.10
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   FREE_SPACE: true
