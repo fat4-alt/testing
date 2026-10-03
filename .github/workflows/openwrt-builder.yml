@@ -89,12 +89,11 @@ jobs:
         [ -e $GITHUB_WORKSPACE/$DIY_SH ] && mv $GITHUB_WORKSPACE/$DIY_SH ./diy.sh
         chmod +x ./diy.sh
         ./diy.sh
-        echo 'src-git qmodem https://github.com/fat4-alt/QModem.git;stable' >> feeds.conf.default
+        echo 'src-git qmodem https://github.com/FUjr/QModem.git;stable' >> feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         ./scripts/feeds update qmodem
         ./scripts/feeds install -a -p qmodem
-        ./scripts/feeds install -a -f -p qmodem
 
     # --------------------------------------------------------
     # 步骤 6：生成配置文件 (.config)
